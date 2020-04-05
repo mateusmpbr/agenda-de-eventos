@@ -2,24 +2,30 @@
 {% block content %}
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            <h1 class="mt-2">Evento</h1>
+        <div class="col-md-6 jumbotron p-4">
+            <h1>Evento</h1>
             <form action="submit" method="POST">
                 {% csrf_token %}
+                <input type="number" name="id_evento" value="{{evento.id}}" hidden>
                 <div class="form-group">
                     <label for="titulo">Título</label>
-                    <input class="form-control" id="titulo" type="text" name="titulo">
+                    <input class="form-control" id="titulo" type="text" name="titulo" value="{{evento.titulo}}">
                 </div>
                 <div class="form-group">
                     <label for="data_evento">Data e Hora</label>
-                    <input class="form-control" id="data_evento" type="datetime-local" name="data_evento">
+                    <input class="form-control" id="data_evento" type="datetime-local" name="data_evento"
+                           value="{{evento.get_input_data_evento}}">
+                </div>
+                <div class="form-group">
+                    <label for="local">Local</label>
+                    <input class="form-control" id="local" type="text" name="local" value="{{evento.local}}">
                 </div>
                 <div class="form-group">
                     <label for="descricao">Descrição</label>
-                    <textarea class="form-control" id="descricao" name="descricao" rows="5"></textarea>
+                    <textarea class="form-control" id="descricao" name="descricao" rows="5">{{evento.descricao}}</textarea>
                 </div>
                 <a href="/" class="btn btn-danger">Cancelar</a>
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
             </form>
 <!--            {% for message in messages %}-->
 <!--            <div class="alert alert-danger mt-3">-->

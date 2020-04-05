@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="243d241e-9144-4855-9854-80c1c6291bf8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/agenda.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/agenda.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/evento.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/evento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/model-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/model-header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +41,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mateus\Documents\Mateus\Estudo\Complementar\Cursos\Digital Innovation One\Desenvolvimento para Internet e Banco de Dados com Python e Django\my-first-django-project\agenda\static\css" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -84,22 +97,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="402" y="0" key="#manage/0.0.1366.728@0.0.1366.728" timestamp="1586003224018" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1586099927699">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1586117982799">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586099927699" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1586099927699">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586117982799" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1586117982799">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586099927699" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1586099927699">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586117982799" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1586117982799">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586099927699" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1586099927699">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586117982799" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1586117982799">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586099927699" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586117982799" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1586003035424">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -108,9 +121,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586095622672" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586036709109">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586119559457">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586036709109" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586119559457" />
   </component>
 </project>
