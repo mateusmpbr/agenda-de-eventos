@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1 class="mt-2">Login</h1>
+            <form action="submit" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="username">Nome</label>
+                    <input class="form-control" id="username" type="text" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input class="form-control" id="password" type="password" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+            {% for message in messages %}
+            <div class="alert alert-danger mt-3">
+                <b>Erro: </b> {{message}}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
