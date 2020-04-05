@@ -1,11 +1,26 @@
 {% extends "model-page.html" %}
 {% block content %}
     <div class="container-fluid">
+        <a href="/logout" class="btn btn-danger float-right m-2">Logout</a>
         <h1>Agendamentos</h1>
-        <ul>
-        {% for evento in eventos %}
-            <li>{{evento.titulo}} - {{evento.get_data_evento}}</li>
-        {% endfor %}
-        </ul>
+        <a href="evento/" class="btn btn-primary mb-2">Cadastrar evento</a>
+        <table class="table">
+          <thead>
+            <tr class="text-center">
+              <th scope="col">Título</th>
+              <th scope="col">Data</th>
+              <th scope="col">Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for evento in eventos %}
+                <tr class="text-center">
+                    <td>{{evento.titulo}}</td>
+                    <td>{{evento.get_data_evento}}</td>
+                    <td>{{evento.descricao}}</td>
+                </tr>
+            {% endfor %}
+          </tbody>
+        </table>
     </div>
 {% endblock %}
