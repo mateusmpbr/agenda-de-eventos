@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <a href="/logout" class="btn btn-secondary float-right m-2">Logout</a>
         <h1 class="jumbotron">Agendamentos</h1>
-        <a href="evento/" class="btn btn-primary mb-2">Cadastrar evento</a>
+        <a href="evento/" class="btn btn-primary mb-2 mt-n4">Cadastrar evento</a>
         <table class="table">
           <thead>
             <tr class="text-center">
@@ -16,8 +16,8 @@
           <tbody>
             {% for evento in eventos %}
                 <tr class="text-center">
-                    <td>{{evento.titulo}}</td>
-                    <td>{{evento.get_data_evento}}</td>
+                    <td {% if evento.get_evento_atrasado %} class="text-danger font-weight-bold" {% endif %}>{{evento.titulo}}</td>
+                    <td {% if evento.get_evento_atrasado %} class="text-danger font-weight-bold" {% endif %}>{{evento.get_data_evento}}</td>
                     <td>{{evento.descricao}}</td>
                     <td>
                         <a href="evento/?id={{ evento.id }}" class="btn btn-success m-1 fonte-branca">Editar</a>

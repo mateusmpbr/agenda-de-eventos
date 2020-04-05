@@ -3,6 +3,7 @@ from core.models import Evento
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from django.http import JsonResponse
 
 # Create your views here.
 
@@ -31,9 +32,16 @@ def submit_login(request):
 @login_required(login_url='/login/')
 def lista_eventos(request):
     usuario = request.user
-    eventos = Evento.objects.filter(usuario=usuario)
+    eventos = Evento.objects.filter(usuario=usuario).order_by('-data_evento')
     response = {'eventos':eventos}
     return render(request, 'agenda.html', response)
+
+@login_required(login_url='/login/')
+def lista_eventos_json(request):
+    usuario = request.user
+    eventos = Evento.objects.filter(usuario=usuario).order_by('-data_evento').values('id','titulo','descricao',
+                                                                                     'data_evento','local')
+    return JsonResponse(list(eventos), safe=False)
 
 
 @login_required(login_url='/login/')
